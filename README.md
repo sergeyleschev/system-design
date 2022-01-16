@@ -2,8 +2,6 @@
 
 ### Design large-scale systems
 
-Design scalable systems will help you become a better engineer.
-
 System design is a broad topic. There is a **vast amount of resources scattered throughout the web** on system design principles.
 
 
@@ -1665,15 +1663,9 @@ Handy metrics based on numbers above:
 * [Yelp Engineering Blog](http://engineeringblog.yelp.com/)
 * [Zynga Engineering Blog](https://www.zynga.com/blogs/engineering)
 
-#### Source(s) and further reading
-
-Looking to add a blog?  To avoid duplicating work, consider adding your company blog to the following repo:
-
-* [kilimchoi/engineering-blogs](https://github.com/kilimchoi/engineering-blogs)
-
 ## Credits
 
-Credits and sources are provided throughout this repo.
+Credits and sources are provided throughout my repo.
 
 Special thanks to:
 
