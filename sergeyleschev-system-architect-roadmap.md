@@ -89,7 +89,7 @@ System design is a broad topic. There is a **vast amount of resources scattered 
 * [Appendix](#appendix)
     * [Powers of two table](#powers-of-two-table)
     * [Latency numbers every programmer should know](#latency-numbers-every-programmer-should-know)
-    * [Additional system design questions](#additional-system-design-questions)
+    * [Additional system design](#additional-system-design)
     * [Real world architectures](#real-world-architectures)
     * [Company architectures](#company-architectures)
     * [Company engineering blogs](#company-engineering-blogs)
@@ -1521,7 +1521,7 @@ Handy metrics based on numbers above:
 * [Designs, lessons, and advice from building large distributed systems](http://www.cs.cornell.edu/projects/ladis2009/talks/dean-keynote-ladis2009.pdf)
 * [Software Engineering Advice from Building Large-Scale Distributed Systems](https://static.googleusercontent.com/media/research.google.com/en//people/jeff/stanford-295-talk.pdf)
 
-### Additional system design questions
+### Additional system design
 
 > Common system design questions, with links to resources on how to solve each.
 
