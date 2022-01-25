@@ -93,8 +93,6 @@ System design is a broad topic. There is a **vast amount of resources scattered 
     * [Real world architectures](#real-world-architectures)
     * [Company architectures](#company-architectures)
     * [Company engineering blogs](#company-engineering-blogs)
-* [Under development](#under-development)
-* [Credits](#credits)
 
 ## How to approach a system design questions
 
@@ -1662,19 +1660,3 @@ Handy metrics based on numbers above:
 * [Yahoo Engineering Blog](http://yahooeng.tumblr.com/)
 * [Yelp Engineering Blog](http://engineeringblog.yelp.com/)
 * [Zynga Engineering Blog](https://www.zynga.com/blogs/engineering)
-
-## Credits
-
-Credits and sources are provided throughout my repo.
-
-Special thanks to:
-
-* [Hired in tech](http://www.hiredintech.com/system-design/the-system-design-process/)
-* [Cracking the coding questions](https://www.amazon.com/dp/0984782850/)
-* [High scalability](http://highscalability.com/)
-* [checkcheckzz/system-design-questions](https://github.com/checkcheckzz/system-design-interview)
-* [shashank88/system_design](https://github.com/shashank88/system_design)
-* [mmcgrana/services-engineering](https://github.com/mmcgrana/services-engineering)
-* [System design cheat sheet](https://gist.github.com/vasanthk/485d1c25737e8e72759f)
-* [A distributed systems reading list](http://dancres.github.io/Pages/)
-* [Cracking the system design questions](http://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview)
