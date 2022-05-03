@@ -1,6 +1,6 @@
 # 🏆 Awards
 ### Ranking #Dev: Global TOP 300 ([Certificate](https://leetcode.com/sergeyleschev/))
-<a href="https://leetcode.com/sergeyleschev/"><img src="https://github.com/sergeyleschev/sergeyleschev/blob/main/leetcode-ranking.png" alt="drawing" width="410"/></a>
+<a href="https://leetcode.com/sergeyleschev/"><img src="https://github.com/sergeyleschev/sergeyleschev/blob/main/leetcode-ranking.png?raw=true" alt="drawing" width="410"/></a>
 
 # The System Design
 
@@ -16,7 +16,7 @@ System design is a broad topic. There is a **vast amount of resources scattered 
 > Each section contains links to more in-depth resources.
 
 <p align="center">
-  <img src="images/jrUBAF7.png">
+  <img src="images/jrUBAF7.png?raw=true">
   <br/>
 </p>
 
@@ -188,49 +188,49 @@ Check out the following links to get a better idea of what to expect:
 
 [View solution](solutions/system_design/pastebin/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/4edXG0T.png)
+![Imgur](images/4edXG0T.png?raw=true)
 
 ### Design the Twitter timeline and search (or Facebook feed and search)
 
 [View solution](solutions/system_design/twitter/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/jrUBAF7.png)
+![Imgur](images/jrUBAF7.png?raw=true)
 
 ### Design a web crawler
 
 [View solution](solutions/system_design/web_crawler/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/bWxPtQA.png)
+![Imgur](images/bWxPtQA.png?raw=true)
 
 ### Design Mint.com
 
 [View solution](solutions/system_design/mint/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/V5q57vU.png)
+![Imgur](images/V5q57vU.png?raw=true)
 
 ### Design the data structures for a social network
 
 [View solution](solutions/system_design/social_graph/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/cdCv5g7.png)
+![Imgur](images/cdCv5g7.png?raw=true)
 
 ### Design a key-value store for a search engine
 
 [View solution](solutions/system_design/query_cache/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/4j99mhe.png)
+![Imgur](images/4j99mhe.png?raw=true)
 
 ### Design Amazon's sales ranking by category feature
 
 [View solution](solutions/system_design/sales_rank/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/MzExP06.png)
+![Imgur](images/MzExP06.png?raw=true)
 
 ### Design a system that scales to millions of users on AWS
 
 [View solution](solutions/system_design/scaling_aws/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/jj3A5N8.png)
+![Imgur](images/jj3A5N8.png?raw=true)
 
 ## Object-oriented design questions with solutions
 
@@ -320,7 +320,7 @@ Generally, you should aim for **maximal throughput** with **acceptable latency**
 ### CAP theorem
 
 <p align="center">
-  <img src="images/bgLMI2u.png">
+  <img src="images/bgLMI2u.png?raw=true">
   <br/>
   <i><a href=http://robertgreiner.com/2014/08/cap-theorem-revisited>Source: CAP theorem revisited</a></i>
 </p>
@@ -461,7 +461,7 @@ If both `Foo` and `Bar` each had 99.9% availability, their total availability in
 ## Domain name system
 
 <p align="center">
-  <img src="images/IOyLj4i.jpg">
+  <img src="images/IOyLj4i.jpg?raw=true">
   <br/>
   <i><a href=http://www.slideshare.net/srikrupa5/dns-security-presentation-issa>Source: DNS security presentation</a></i>
 </p>
@@ -499,7 +499,7 @@ Services such as [CloudFlare](https://www.cloudflare.com/dns/) and [Route 53](ht
 ## Content delivery network
 
 <p align="center">
-  <img src="images/h9TAuGI.jpg">
+  <img src="images/h9TAuGI.jpg?raw=true">
   <br/>
   <i><a href=https://www.creative-artworks.eu/why-use-a-content-delivery-network-cdn/>Source: Why use a CDN</a></i>
 </p>
@@ -540,7 +540,7 @@ Sites with heavy traffic work well with pull CDNs, as traffic is spread out more
 ## Load balancer
 
 <p align="center">
-  <img src="images/h81n9iK.png">
+  <img src="images/h81n9iK.png?raw=true">
   <br/>
   <i><a href=http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html>Source: Scalable system design patterns</a></i>
 </p>
@@ -610,7 +610,7 @@ Load balancers can also help with horizontal scaling, improving performance and 
 ## Reverse proxy (web server)
 
 <p align="center">
-  <img src="images/n41Azff.png">
+  <img src="images/n41Azff.png?raw=true">
   <br/>
   <i><a href=https://upload.wikimedia.org/wikipedia/commons/6/67/Reverse_proxy_h2g2bob.svg>Source: Wikipedia</a></i>
   <br/>
@@ -653,7 +653,7 @@ Additional benefits include:
 ## Application layer
 
 <p align="center">
-  <img src="images/yB5SYwm.png">
+  <img src="images/yB5SYwm.png?raw=true">
   <br/>
   <i><a href=http://lethain.com/introduction-to-architecting-systems-for-scale/#platform_layer>Source: Intro to architecting systems for scale</a></i>
 </p>
@@ -688,7 +688,7 @@ Systems such as [Consul](https://www.consul.io/docs/index.html), [Etcd](https://
 ## Database
 
 <p align="center">
-  <img src="images/Xkm5CXz.png">
+  <img src="images/Xkm5CXz.png?raw=true">
   <br/>
   <i><a href=https://www.youtube.com/watch?v=kKjm4ehYiMs>Source: Scaling up to your first 10 million users</a></i>
 </p>
@@ -711,7 +711,7 @@ There are many techniques to scale a relational database: **master-slave replica
 The master serves reads and writes, replicating writes to one or more slaves, which serve only reads.  Slaves can also replicate to additional slaves in a tree-like fashion.  If the master goes offline, the system can continue to operate in read-only mode until a slave is promoted to a master or a new master is provisioned.
 
 <p align="center">
-  <img src="images/C9ioGtn.png">
+  <img src="images/C9ioGtn.png?raw=true">
   <br/>
   <i><a href=http://www.slideshare.net/jboner/scalability-availability-stability-patterns/>Source: Scalability, availability, stability, patterns</a></i>
 </p>
@@ -726,7 +726,7 @@ The master serves reads and writes, replicating writes to one or more slaves, wh
 Both masters serve reads and writes and coordinate with each other on writes.  If either master goes down, the system can continue to operate with both reads and writes.
 
 <p align="center">
-  <img src="images/krAHLGg.png">
+  <img src="images/krAHLGg.png?raw=true">
   <br/>
   <i><a href=http://www.slideshare.net/jboner/scalability-availability-stability-patterns/>Source: Scalability, availability, stability, patterns</a></i>
 </p>
@@ -754,7 +754,7 @@ Both masters serve reads and writes and coordinate with each other on writes.  I
 #### Federation
 
 <p align="center">
-  <img src="images/U3qV33e.png">
+  <img src="images/U3qV33e.png?raw=true">
   <br/>
   <i><a href=https://www.youtube.com/watch?v=kKjm4ehYiMs>Source: Scaling up to your first 10 million users</a></i>
 </p>
@@ -775,7 +775,7 @@ Federation (or functional partitioning) splits up databases by function.  For ex
 #### Sharding
 
 <p align="center">
-  <img src="images/wU8x5Id.png">
+  <img src="images/wU8x5Id.png?raw=true">
   <br/>
   <i><a href=http://www.slideshare.net/jboner/scalability-availability-stability-patterns/>Source: Scalability, availability, stability, patterns</a></i>
 </p>
@@ -919,7 +919,7 @@ Document stores provide high flexibility and are often used for working with occ
 #### Wide column store
 
 <p align="center">
-  <img src="images/n16iOGk.png">
+  <img src="images/n16iOGk.png?raw=true">
   <br/>
   <i><a href=http://blog.grio.com/2015/11/sql-nosql-a-brief-history.html>Source: SQL & NoSQL, a brief history</a></i>
 </p>
@@ -942,7 +942,7 @@ Wide column stores offer high availability and high scalability.  They are often
 #### Graph database
 
 <p align="center">
-  <img src="images/fNcl65g.png">
+  <img src="images/fNcl65g.png?raw=true">
   <br/>
   <i><a href=https://en.wikipedia.org/wiki/File:GraphDatabase_PropertyGraph.png>Source: Graph database</a></i>
 </p>
@@ -970,7 +970,7 @@ Graphs databases offer high performance for data models with complex relationshi
 ### SQL or NoSQL
 
 <p align="center">
-  <img src="images/wXGqG5f.png">
+  <img src="images/wXGqG5f.png?raw=true">
   <br/>
   <i><a href=https://www.infoq.com/articles/Transition-RDBMS-NoSQL/>Source: Transitioning from RDBMS to NoSQL</a></i>
 </p>
@@ -1012,7 +1012,7 @@ Sample data well-suited for NoSQL:
 ## Cache
 
 <p align="center">
-  <img src="images/Q6z24La.png">
+  <img src="images/Q6z24La.png?raw=true">
   <br/>
   <i><a href=http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html>Source: Scalable system design patterns</a></i>
 </p>
@@ -1083,7 +1083,7 @@ Since you can only store a limited amount of data in cache, you'll need to deter
 #### Cache-aside
 
 <p align="center">
-  <img src="images/ONjORqk.png">
+  <img src="images/ONjORqk.png?raw=true">
   <br/>
   <i><a href=http://www.slideshare.net/tmatyashovsky/from-cache-to-in-memory-data-grid-introduction-to-hazelcast>Source: From cache to in-memory data grid</a></i>
 </p>
@@ -1119,7 +1119,7 @@ Subsequent reads of data added to cache are fast.  Cache-aside is also referred 
 #### Write-through
 
 <p align="center">
-  <img src="images/0vBc0hN.png">
+  <img src="images/0vBc0hN.png?raw=true">
   <br/>
   <i><a href=http://www.slideshare.net/jboner/scalability-availability-stability-patterns/>Source: Scalability, availability, stability, patterns</a></i>
 </p>
@@ -1154,7 +1154,7 @@ Write-through is a slow overall operation due to the write operation, but subseq
 #### Write-behind (write-back)
 
 <p align="center">
-  <img src="images/rgSrvjG.png">
+  <img src="images/rgSrvjG.png?raw=true">
   <br/>
   <i><a href=http://www.slideshare.net/jboner/scalability-availability-stability-patterns/>Source: Scalability, availability, stability, patterns</a></i>
 </p>
@@ -1172,7 +1172,7 @@ In write-behind, the application does the following:
 #### Refresh-ahead
 
 <p align="center">
-  <img src="images/kxtjqgE.png">
+  <img src="images/kxtjqgE.png?raw=true">
   <br/>
   <i><a href=http://www.slideshare.net/tmatyashovsky/from-cache-to-in-memory-data-grid-introduction-to-hazelcast>Source: From cache to in-memory data grid</a></i>
 </p>
@@ -1204,7 +1204,7 @@ Refresh-ahead can result in reduced latency vs read-through if the cache can acc
 ## Asynchronism
 
 <p align="center">
-  <img src="images/54GYsSx.png">
+  <img src="images/54GYsSx.png?raw=true">
   <br/>
   <i><a href=http://lethain.com/introduction-to-architecting-systems-for-scale/#platform_layer>Source: Intro to architecting systems for scale</a></i>
 </p>
@@ -1250,7 +1250,7 @@ If queues start to grow significantly, the queue size can become larger than mem
 ## Communication
 
 <p align="center">
-  <img src="images/5KeocQs.jpg">
+  <img src="images/5KeocQs.jpg?raw=true">
   <br/>
   <i><a href=http://www.escotal.com/osilayer.html>Source: OSI 7 layer model</a></i>
 </p>
@@ -1282,7 +1282,7 @@ HTTP is an application layer protocol relying on lower-level protocols such as *
 ### Transmission control protocol (TCP)
 
 <p align="center">
-  <img src="images/JdAsdvG.jpg">
+  <img src="images/JdAsdvG.jpg?raw=true">
   <br/>
   <i><a href=http://www.wildbunny.co.uk/blog/2012/10/09/how-to-make-a-multi-player-game-part-1/>Source: How to make a multiplayer game</a></i>
 </p>
@@ -1306,7 +1306,7 @@ Use TCP over UDP when:
 ### User datagram protocol (UDP)
 
 <p align="center">
-  <img src="images/yzDrJtA.jpg">
+  <img src="images/yzDrJtA.jpg?raw=true">
   <br/>
   <i><a href=http://www.wildbunny.co.uk/blog/2012/10/09/how-to-make-a-multi-player-game-part-1/>Source: How to make a multiplayer game</a></i>
 </p>
@@ -1335,7 +1335,7 @@ Use UDP over TCP when:
 ### Remote procedure call (RPC)
 
 <p align="center">
-  <img src="images/iF4Mkb5.png">
+  <img src="images/iF4Mkb5.png?raw=true">
   <br/>
   <i><a href=http://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview>Source: Crack the system design questions</a></i>
 </p>
@@ -1560,7 +1560,7 @@ Handy metrics based on numbers above:
 > Articles on how real world systems are designed.
 
 <p align="center">
-  <img src="images/TcUo2fw.png">
+  <img src="images/TcUo2fw.png?raw=true">
   <br/>
   <i><a href=https://www.infoq.com/presentations/Twitter-Timeline-Scalability>Source: Twitter timelines at scale</a></i>
 </p>
