@@ -1,24 +1,27 @@
-# 🏆 Awards
+# S.Leschev System Architect
+
+## 🏆 Awards
 ### Ranking #Dev: Global TOP 300 ([Certificate](https://leetcode.com/sergeyleschev/))
 <a href="https://leetcode.com/sergeyleschev/"><img src="https://github.com/sergeyleschev/sergeyleschev/blob/main/leetcode-ranking.png?raw=true" alt="drawing" width="410"/></a>
 
-# The System Design
+## The System Design
 
 ### Design large-scale systems
 
 System design is a broad topic. There is a **vast amount of resources scattered throughout the web** on system design principles.
 
+<p align="center">
+  <img src="images/jrUBAF7.png?raw=true">
+  <br/>
+</p>
+
+<div style="page-break-after: always;"></div>
 
 ## Index of system design topics
 
 > Summaries of various system design topics, including pros and cons.  **Everything is a trade-off**.
 >
 > Each section contains links to more in-depth resources.
-
-<p align="center">
-  <img src="images/jrUBAF7.png?raw=true">
-  <br/>
-</p>
 
 * [System design topics: start here](#system-design-topics-start-here)
     * [Step 1: Review the scalability video lecture](#step-1-review-the-scalability-video-lecture)
@@ -97,6 +100,8 @@ System design is a broad topic. There is a **vast amount of resources scattered 
     * [Real world architectures](#real-world-architectures)
     * [Company architectures](#company-architectures)
     * [Company engineering blogs](#company-engineering-blogs)
+
+<div style="page-break-after: always;"></div>
 
 ## How to approach a system design questions
 
@@ -461,7 +466,7 @@ If both `Foo` and `Bar` each had 99.9% availability, their total availability in
 ## Domain name system
 
 <p align="center">
-  <img src="images/IOyLj4i.jpg?raw=true">
+  <img src="images/IOyLj4i.png?raw=true">
   <br/>
   <i><a href=http://www.slideshare.net/srikrupa5/dns-security-presentation-issa>Source: DNS security presentation</a></i>
 </p>
@@ -499,7 +504,7 @@ Services such as [CloudFlare](https://www.cloudflare.com/dns/) and [Route 53](ht
 ## Content delivery network
 
 <p align="center">
-  <img src="images/h9TAuGI.jpg?raw=true">
+  <img src="images/h9TAuGI.png?raw=true">
   <br/>
   <i><a href=https://www.creative-artworks.eu/why-use-a-content-delivery-network-cdn/>Source: Why use a CDN</a></i>
 </p>
@@ -1250,7 +1255,7 @@ If queues start to grow significantly, the queue size can become larger than mem
 ## Communication
 
 <p align="center">
-  <img src="images/5KeocQs.jpg?raw=true">
+  <img src="images/5KeocQs.png?raw=true">
   <br/>
   <i><a href=http://www.escotal.com/osilayer.html>Source: OSI 7 layer model</a></i>
 </p>
@@ -1282,7 +1287,7 @@ HTTP is an application layer protocol relying on lower-level protocols such as *
 ### Transmission control protocol (TCP)
 
 <p align="center">
-  <img src="images/JdAsdvG.jpg?raw=true">
+  <img src="images/JdAsdvG.png?raw=true">
   <br/>
   <i><a href=http://www.wildbunny.co.uk/blog/2012/10/09/how-to-make-a-multi-player-game-part-1/>Source: How to make a multiplayer game</a></i>
 </p>
@@ -1306,7 +1311,7 @@ Use TCP over UDP when:
 ### User datagram protocol (UDP)
 
 <p align="center">
-  <img src="images/yzDrJtA.jpg?raw=true">
+  <img src="images/yzDrJtA.png?raw=true">
   <br/>
   <i><a href=http://www.wildbunny.co.uk/blog/2012/10/09/how-to-make-a-multi-player-game-part-1/>Source: How to make a multiplayer game</a></i>
 </p>
@@ -1665,6 +1670,8 @@ Handy metrics based on numbers above:
 * [Yelp Engineering Blog](http://engineeringblog.yelp.com/)
 * [Zynga Engineering Blog](https://www.zynga.com/blogs/engineering)
 
+<div style="page-break-after: always;"></div>
+
 # Licenses & certifications
 - 🏆 LeetCode Global TOP 300 (Swift: [Certificate](https://leetcode.com/sergeyleschev/), Sources: [Swift](https://github.com/sergeyleschev/leetcode-swift)).
 - 🏆 Golden Award for the Year of the Tiger Challenge (TypeScript: [Certificate](https://app.codility.com/cert/view/certQBA3EW-QESXM38DNR3SXMYZ/), Sources: [Codility](https://github.com/sergeyleschev/codility-swift)).
@@ -1675,3 +1682,24 @@ Handy metrics based on numbers above:
 - LinkedIn Skill Asessment (Databases): [MongoDB](https://www.linkedin.com/in/sergeyleschev/detail/assessments/MongoDB/report/), [NoSQL](https://www.linkedin.com/in/sergeyleschev/detail/assessments/NoSQL/report/), [Transact-SQL (T-SQL)](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Transact-SQL%20(T-SQL)/report/), [MySQL](https://www.linkedin.com/in/sergeyleschev/detail/assessments/MySQL/report/).
 - LinkedIn Skill Asessment (Infra/DevOps): [Bash](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Bash/report/), [Git](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Git/report/), [Amazon Web Services (AWS)](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Amazon%20Web%20Services%20(AWS)/report/), [AWS Lambda](https://www.linkedin.com/in/sergeyleschev/detail/assessments/AWS%20Lambda/report/), [Google Cloud Platform (GCP)](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Google%20Cloud%20Platform%20(GCP)/report/), [Microsoft Azure](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Microsoft%20Azure/report/), [Hadoop](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Hadoop/report/), [IT Operations](https://www.linkedin.com/in/sergeyleschev/detail/assessments/IT%20Operations/report/).
 
+<div style="page-break-after: always;"></div>
+
+## Contacts
+
+I have a clear focus on time-to-market and don't prioritize technical debt.
+ 
+🛩️ #startups #management #cto #swift #typescript #database
+
+📧 Email: [sergey.leschev@gmail.com](mailto:sergey.leschev@gmail.com)
+
+👋 LinkedIn: [https://linkedin.com/in/sergeyleschev](https://www.linkedin.com/in/sergeyleschev/)
+
+👋 Twitter: [https://twitter.com/sergeyleschev](https://twitter.com/sergeyleschev)
+
+👋 Github: [https://github.com/sergeyleschev](https://github.com/sergeyleschev)
+
+🌎 Website: [https://sergeyleschev.github.io](https://sergeyleschev.github.io)
+
+🖨️ PDF: [Download](https://github.com/sergeyleschev/sergeyleschev/raw/main/sergeyleschev-system-architect-roadmap.pdf)
+
+ALT: SIARHEI LIASHCHOU
