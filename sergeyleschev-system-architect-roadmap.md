@@ -11,7 +11,7 @@
 System design is a broad topic. There is a **vast amount of resources scattered throughout the web** on system design principles.
 
 <p align="center">
-  <img src="images/jrUBAF7.png?raw=true">
+  <img alt="system design" src="images/jrUBAF7.png?raw=true" width="400">
   <br/>
 </p>
 
@@ -189,53 +189,71 @@ Check out the following links to get a better idea of what to expect:
 | Design Amazon's sales ranking by category feature | [Solution](solutions/system_design/sales_rank/sergeyleschev-system-design-roadmap.md) |
 | Design a system that scales to millions of users on AWS | [Solution](solutions/system_design/scaling_aws/sergeyleschev-system-design-roadmap.md) |
 
+<div style="page-break-after: always;"></div>
+
 ### Design Pastebin.com (or Bit.ly)
 
 [View solution](solutions/system_design/pastebin/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/4edXG0T.png?raw=true)
+<img alt="system design" src="images/4edXG0T.png?raw=true" width="400">
+
+<div style="page-break-after: always;"></div>
 
 ### Design the Twitter timeline and search (or Facebook feed and search)
 
 [View solution](solutions/system_design/twitter/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/jrUBAF7.png?raw=true)
+<img alt="system design" src="images/jrUBAF7.png?raw=true" width="400">
+
+<div style="page-break-after: always;"></div>
 
 ### Design a web crawler
 
 [View solution](solutions/system_design/web_crawler/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/bWxPtQA.png?raw=true)
+<img alt="system design" src="images/bWxPtQA.png?raw=true" width="400">
+
+<div style="page-break-after: always;"></div>
 
 ### Design Mint.com
 
 [View solution](solutions/system_design/mint/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/V5q57vU.png?raw=true)
+<img alt="system design" src="images/V5q57vU.png?raw=true" width="400">
+
+<div style="page-break-after: always;"></div>
 
 ### Design the data structures for a social network
 
 [View solution](solutions/system_design/social_graph/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/cdCv5g7.png?raw=true)
+<img alt="system design" src="images/cdCv5g7.png?raw=true" width="400">
+
+<div style="page-break-after: always;"></div>
 
 ### Design a key-value store for a search engine
 
 [View solution](solutions/system_design/query_cache/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/4j99mhe.png?raw=true)
+<img alt="system design" src="images/4j99mhe.png?raw=true" width="400">
+
+<div style="page-break-after: always;"></div>
 
 ### Design Amazon's sales ranking by category feature
 
 [View solution](solutions/system_design/sales_rank/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/MzExP06.png?raw=true)
+<img alt="system design" src="images/MzExP06.png?raw=true" width="400">
+
+<div style="page-break-after: always;"></div>
 
 ### Design a system that scales to millions of users on AWS
 
 [View solution](solutions/system_design/scaling_aws/sergeyleschev-system-design-roadmap.md)
 
-![Imgur](images/jj3A5N8.png?raw=true)
+<img alt="system design" src="images/jj3A5N8.png?raw=true" width="400">
+
+<div style="page-break-after: always;"></div>
 
 ## Object-oriented design questions with solutions
 
@@ -501,6 +519,8 @@ Services such as [CloudFlare](https://www.cloudflare.com/dns/) and [Route 53](ht
 * [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
 * [DNS articles](https://support.dnsimple.com/categories/dns/)
 
+<div style="page-break-after: always;"></div>
+
 ## Content delivery network
 
 <p align="center">
@@ -541,6 +561,8 @@ Sites with heavy traffic work well with pull CDNs, as traffic is spread out more
 * [Globally distributed content delivery](https://figshare.com/articles/Globally_distributed_content_delivery/6605972)
 * [The differences between push and pull CDNs](http://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/)
 * [Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network)
+
+<div style="page-break-after: always;"></div>
 
 ## Load balancer
 
@@ -611,6 +633,8 @@ Load balancers can also help with horizontal scaling, improving performance and 
 * [Layer 4 load balancing](https://www.nginx.com/resources/glossary/layer-4-load-balancing/)
 * [Layer 7 load balancing](https://www.nginx.com/resources/glossary/layer-7-load-balancing/)
 * [ELB listener config](http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-listener-config.html)
+
+<div style="page-break-after: always;"></div>
 
 ## Reverse proxy (web server)
 
@@ -776,6 +800,8 @@ Federation (or functional partitioning) splits up databases by function.  For ex
 ##### Source(s) and further reading: federation
 
 * [Scaling up to your first 10 million users](https://www.youtube.com/watch?v=kKjm4ehYiMs)
+
+<div style="page-break-after: always;"></div>
 
 #### Sharding
 
@@ -944,6 +970,8 @@ Wide column stores offer high availability and high scalability.  They are often
 * [HBase architecture](https://www.edureka.co/blog/hbase-architecture/)
 * [Cassandra architecture](http://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archIntro.html)
 
+<div style="page-break-after: always;"></div>
+
 #### Graph database
 
 <p align="center">
@@ -1013,6 +1041,8 @@ Sample data well-suited for NoSQL:
 
 * [Scaling up to your first 10 million users](https://www.youtube.com/watch?v=kKjm4ehYiMs)
 * [SQL vs NoSQL differences](https://www.sitepoint.com/sql-vs-nosql-differences/)
+
+<div style="page-break-after: always;"></div>
 
 ## Cache
 
@@ -1121,6 +1151,8 @@ Subsequent reads of data added to cache are fast.  Cache-aside is also referred 
 * Data can become stale if it is updated in the database.  This issue is mitigated by setting a time-to-live (TTL) which forces an update of the cache entry, or by using write-through.
 * When a node fails, it is replaced by a new, empty node, increasing latency.
 
+<div style="page-break-after: always;"></div>
+
 #### Write-through
 
 <p align="center">
@@ -1155,6 +1187,8 @@ Write-through is a slow overall operation due to the write operation, but subseq
 
 * When a new node is created due to failure or scaling, the new node will not cache entries until the entry is updated in the database.  Cache-aside in conjunction with write through can mitigate this issue.
 * Most data written might never be read, which can be minimized with a TTL.
+
+<div style="page-break-after: always;"></div>
 
 #### Write-behind (write-back)
 
@@ -1231,6 +1265,8 @@ The user is not blocked and the job is processed in the background.  During this
 
 **[Amazon SQS](https://aws.amazon.com/sqs/)** is hosted but can have high latency and has the possibility of messages being delivered twice.
 
+<div style="page-break-after: always;"></div>
+
 ### Task queues
 
 Tasks queues receive tasks and their related data, runs them, then delivers their results.  They can support scheduling and can be used to run computationally-intensive jobs in the background.
@@ -1251,6 +1287,8 @@ If queues start to grow significantly, the queue size can become larger than mem
 * [Applying back pressure when overloaded](http://mechanical-sympathy.blogspot.com/2012/05/apply-back-pressure-when-overloaded.html)
 * [Little's law](https://en.wikipedia.org/wiki/Little%27s_law)
 * [What is the difference between a message queue and a task queue?](https://www.quora.com/What-is-the-difference-between-a-message-queue-and-a-task-queue-Why-would-a-task-queue-require-a-message-broker-like-RabbitMQ-Redis-Celery-or-IronMQ-to-function)
+
+<div style="page-break-after: always;"></div>
 
 ## Communication
 
@@ -1283,6 +1321,8 @@ HTTP is an application layer protocol relying on lower-level protocols such as *
 * [What is HTTP?](https://www.nginx.com/resources/glossary/http/)
 * [Difference between HTTP and TCP](https://www.quora.com/What-is-the-difference-between-HTTP-protocol-and-TCP-protocol)
 * [Difference between PUT and PATCH](https://laracasts.com/discuss/channels/general-discussion/whats-the-differences-between-put-and-patch?page=1)
+
+<div style="page-break-after: always;"></div>
 
 ### Transmission control protocol (TCP)
 
