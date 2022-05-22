@@ -1,4 +1,4 @@
-# S.Leschev System Architect
+# S.Leschev System Architect (L7+)
 
 ## 🏆 Awards
 ### Ranking #Dev: Global TOP 300 ([Certificate](https://leetcode.com/sergeyleschev/))
