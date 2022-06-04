@@ -1,4 +1,5 @@
-# S.Leschev System Architect (L7+)
+# S.Leschev System Architect
+Google Engineering Level: L7+
 
 ## 🏆 Awards
 ### Ranking #Dev: Global TOP 300 ([Certificate](https://leetcode.com/sergeyleschev/))
