@@ -1721,7 +1721,7 @@ Handy metrics based on numbers above:
 
 <div style="page-break-after: always;"></div>
 
-## Design Patterns (L5+)
+## Design Patterns (L6+)
 
 | [Behavioral](https://github.com/sergeyleschev/sergeyleschev/blob/main/design-patterns.md#behavioral)                              | [Creational](https://github.com/sergeyleschev/sergeyleschev/blob/main/design-patterns.md#creational)                | [Structural](https://github.com/sergeyleschev/sergeyleschev/blob/main/design-patterns.md#structural)                |
 | ------------------------------------------------------ | ---------------------------------------- | ---------------------------------------- |
