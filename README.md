@@ -14,20 +14,16 @@ Google Engineering Level: L7+
 - 🏆 LeetCode Global TOP 300 (Swift: [Certificate](https://leetcode.com/sergeyleschev/), Sources: [Swift](https://github.com/sergeyleschev/leetcode-swift)).
 - 🏆 Golden Award for the Year of the Tiger Challenge (TypeScript: [Certificate](https://app.codility.com/cert/view/certQBA3EW-QESXM38DNR3SXMYZ/), Sources: [Codility](https://github.com/sergeyleschev/codility-swift)).
 - 🏆 Golden Award Muad'Dib's Challenge (Swift: [Certificate](https://app.codility.com/cert/view/cert5YT6JA-Y9ZKFEFXEZWGTR3G/), Sources: [Swift](https://github.com/sergeyleschev/codility-swift)).
-- 2022 June LeetCode Challenge ([2022-06-30](https://leetcode.com/sergeyleschev))
-- 2022 May LeetCode Challenge ([2022-05-31](https://leetcode.com/sergeyleschev))
-- 2022 Apr LeetCode Challenge ([2022-04-30](https://leetcode.com/sergeyleschev))
-- Dynamic Programming ([2022-05-07](https://leetcode.com/sergeyleschev))
-- Algorithm II ([2022-05-21](https://leetcode.com/sergeyleschev))
-- Algorithm I ([2022-04-30](https://leetcode.com/sergeyleschev))
-- Data Structure II ([2022-05-21](https://leetcode.com/sergeyleschev))
-- Data Structure ([2022-04-30](https://leetcode.com/sergeyleschev))
-- Graph Theory ([2022-04-30](https://leetcode.com/sergeyleschev))
-- Binary Search II ([2022-05-18](https://leetcode.com/sergeyleschev))
-- Binary Search ([2022-04-28](https://leetcode.com/sergeyleschev))
-- Programming Skills II ([2022-05-18](https://leetcode.com/sergeyleschev))
-- Programming Skills ([2022-04-28](https://leetcode.com/sergeyleschev))
-- SQL I ([2022-04-26](https://leetcode.com/sergeyleschev))
+- 2022 June LeetCode Challenge ([2022-06-30](https://leetcode.com/sergeyleschev)).
+- 2022 May LeetCode Challenge ([2022-05-31](https://leetcode.com/sergeyleschev)).
+- 2022 Apr LeetCode Challenge ([2022-04-30](https://leetcode.com/sergeyleschev)).
+- LeetCode Dynamic Programming ([2022-05-07](https://leetcode.com/sergeyleschev)).
+- Graph Theory ([2022-04-30](https://leetcode.com/sergeyleschev)).
+- SQL ([2022-04-26](https://leetcode.com/sergeyleschev)).
+- Algorithm I ([2022-04-30](https://leetcode.com/sergeyleschev)), Algorithm II ([2022-05-21](https://leetcode.com/sergeyleschev)).
+- Data Structure I ([2022-04-30](https://leetcode.com/sergeyleschev)), Data Structure II ([2022-05-21](https://leetcode.com/sergeyleschev)).
+- Binary Search I ([2022-04-28](https://leetcode.com/sergeyleschev)), Binary Search II ([2022-05-18](https://leetcode.com/sergeyleschev)).
+- Programming Skills I ([2022-04-28](https://leetcode.com/sergeyleschev)), Programming Skills II ([2022-05-18](https://leetcode.com/sergeyleschev)).
 - LinkedIn Skill Asessment (Mobile): [Swift (Programming Language)](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Swift/report/), [Object-Oriented Programming (OOP)](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Object-Oriented%20Programming%20(OOP)/report/), [Objective-C](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Objective-C/report/), [C++](https://www.linkedin.com/in/sergeyleschev/detail/assessments/C++/report/), [Ionic](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Angular/report/), [JSON](https://www.linkedin.com/in/sergeyleschev/detail/assessments/JSON/report/), [XML](https://www.linkedin.com/in/sergeyleschev/detail/assessments/XML/report/), [Android](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Android/report/), [Kotlin](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Kotlin/report/), [Maven](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Maven/report/), [Java](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Java/report/), [REST APIs](https://www.linkedin.com/in/sergeyleschev/detail/assessments/REST%20APIs/report/).
 - LinkedIn Skill Asessment (Front-End): [Front-end Development](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Front-end%20Development/report/), [Angular](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Angular/report/), [React](https://www.linkedin.com/in/sergeyleschev/detail/assessments/React/report/), [Javascript](https://www.linkedin.com/in/sergeyleschev/detail/assessments/JavaScript/report/), [HTML](https://www.linkedin.com/in/sergeyleschev/detail/assessments/HTML/report/), [CSS](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Cascading%20Style%20Sheets%20(CSS)/report/), [jQuery](https://www.linkedin.com/in/sergeyleschev/detail/assessments/jQuery/report/).
 - LinkedIn Skill Asessment (Back-End): [Node.js](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Node.js/report/), [Java](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Java/report/), [Spring Framework](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Spring%20Framework/report/), [Scala](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Scala/report/), [C#](https://www.linkedin.com/in/sergeyleschev/detail/assessments/C%23/report/), [.NET Framework](https://www.linkedin.com/in/sergeyleschev/detail/assessments/.NET%20Framework/report/), [Unity](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Unity/report/), [Python (Programming Language)](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Python%20(Programming%20Language)/report/), [Django](https://www.linkedin.com/in/sergeyleschev/detail/assessments/Django/report/), [PHP](https://www.linkedin.com/in/sergeyleschev/detail/assessments/PHP/report/), [C (Programming Language)](https://www.linkedin.com/in/sergeyleschev/detail/assessments/C%20(Programming%20Language)/report/).
