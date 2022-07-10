@@ -1,4 +1,5 @@
 # S.Leschev System Architect
+<img itemprop="image" alt="Sergey Leschev" src="https://sergeyleschev.github.io/sergeyleschev.png" width=250/>
 Google Engineering Level: L7+
 
 ## 🏆 Awards
