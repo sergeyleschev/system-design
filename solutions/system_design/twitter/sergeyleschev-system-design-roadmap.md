@@ -93,7 +93,7 @@ Handy conversion guide:
 
 > Outline a high level design with all important components.
 
-![Imgur](http://i.imgur.com/48tEA2j.png)
+<img itemprop="image" alt="Sergey Leschev" src="https://miro.medium.com/max/1400/1*GGhsuoNh03w2BSoy7L-55A.png?raw=true" width="410"/>
 
 ## Step 3: Design core components
 
@@ -223,7 +223,7 @@ The response would be similar to that of the home timeline, except for tweets ma
 
 > Identify and address bottlenecks, given the constraints.
 
-![Imgur](http://i.imgur.com/jrUBAF7.png)
+<img itemprop="image" alt="Sergey Leschev" src="https://miro.medium.com/max/1400/1*_OQNlTIOnEeUIUp3QbXkVA.png?raw=true" width="410"/>
 
 **Important: Do not simply jump right into the final design from the initial design!**
 
