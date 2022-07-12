@@ -1,6 +1,6 @@
 # Design a key-value cache to save the results of the most recent web server queries
 
-*Note: This document links directly to relevant areas found in the [system design topics](https://github.com/sergeyleschev/system-design#index-of-system-design-topics) to avoid duplication.  Refer to the linked content for general talking points, tradeoffs, and alternatives.*
+*Note: This document links directly to relevant areas found in the [system design topics](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#index-of-system-design-topics) to avoid duplication.  Refer to the linked content for general talking points, tradeoffs, and alternatives.*
 
 ## Step 1: Outline use cases and constraints
 
@@ -66,11 +66,11 @@ Handy conversion guide:
 
 ### Use case: User sends a request resulting in a cache hit
 
-Popular queries can be served from a **Memory Cache** such as Redis or Memcached to reduce read latency and to avoid overloading the **Reverse Index Service** and **Document Service**.  Reading 1 MB sequentially from memory takes about 250 microseconds, while reading from SSD takes 4x and from disk takes 80x longer.<sup><a href=https://github.com/sergeyleschev/system-design#latency-numbers-every-programmer-should-know>1</a></sup>
+Popular queries can be served from a **Memory Cache** such as Redis or Memcached to reduce read latency and to avoid overloading the **Reverse Index Service** and **Document Service**.  Reading 1 MB sequentially from memory takes about 250 microseconds, while reading from SSD takes 4x and from disk takes 80x longer.<sup><a href=https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#latency-numbers-every-programmer-should-know>1</a></sup>
 
 Since the cache has limited capacity, we'll use a least recently used (LRU) approach to expire older entries.
 
-* The **Client** sends a request to the **Web Server**, running as a [reverse proxy](https://github.com/sergeyleschev/system-design#reverse-proxy-web-server)
+* The **Client** sends a request to the **Web Server**, running as a [reverse proxy](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#reverse-proxy-web-server)
 * The **Web Server** forwards the request to the **Query API** server
 * The **Query API** server does the following:
     * Parses the query
@@ -206,7 +206,7 @@ The cache should be updated when:
 
 The most straightforward way to handle these cases is to simply set a max time that a cached entry can stay in the cache before it is updated, usually referred to as time to live (TTL).
 
-Refer to [When to update the cache](https://github.com/sergeyleschev/system-design#when-to-update-the-cache) for tradeoffs and alternatives.  The approach above describes [cache-aside](https://github.com/sergeyleschev/system-design#cache-aside).
+Refer to [When to update the cache](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#when-to-update-the-cache) for tradeoffs and alternatives.  The approach above describes [cache-aside](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#cache-aside).
 
 ## Step 4: Scale the design
 
@@ -222,16 +222,16 @@ It's important to discuss what bottlenecks you might encounter with the initial 
 
 We'll introduce some components to complete the design and to address scalability issues.  Internal load balancers are not shown to reduce clutter.
 
-*To avoid repeating discussions*, refer to the following [system design topics](https://github.com/sergeyleschev/system-design#index-of-system-design-topics) for main talking points, tradeoffs, and alternatives:
+*To avoid repeating discussions*, refer to the following [system design topics](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#index-of-system-design-topics) for main talking points, tradeoffs, and alternatives:
 
-* [DNS](https://github.com/sergeyleschev/system-design#domain-name-system)
-* [Load balancer](https://github.com/sergeyleschev/system-design#load-balancer)
-* [Horizontal scaling](https://github.com/sergeyleschev/system-design#horizontal-scaling)
-* [Web server (reverse proxy)](https://github.com/sergeyleschev/system-design#reverse-proxy-web-server)
-* [API server (application layer)](https://github.com/sergeyleschev/system-design#application-layer)
-* [Cache](https://github.com/sergeyleschev/system-design#cache)
-* [Consistency patterns](https://github.com/sergeyleschev/system-design#consistency-patterns)
-* [Availability patterns](https://github.com/sergeyleschev/system-design#availability-patterns)
+* [DNS](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#domain-name-system)
+* [Load balancer](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#load-balancer)
+* [Horizontal scaling](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#horizontal-scaling)
+* [Web server (reverse proxy)](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#reverse-proxy-web-server)
+* [API server (application layer)](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#application-layer)
+* [Cache](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#cache)
+* [Consistency patterns](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#consistency-patterns)
+* [Availability patterns](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#availability-patterns)
 
 ### Expanding the Memory Cache to many machines
 
@@ -239,7 +239,7 @@ To handle the heavy request load and the large amount of memory needed, we'll sc
 
 * **Each machine in the cache cluster has its own cache** - Simple, although it will likely result in a low cache hit rate.
 * **Each machine in the cache cluster has a copy of the cache** - Simple, although it is an inefficient use of memory.
-* **The cache is [sharded](https://github.com/sergeyleschev/system-design#sharding) across all machines in the cache cluster** - More complex, although it is likely the best option.  We could use hashing to determine which machine could have the cached results of a query using `machine = hash(query)`.  We'll likely want to use [consistent hashing](https://github.com/sergeyleschev/system-design#under-development).
+* **The cache is [sharded](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#sharding) across all machines in the cache cluster** - More complex, although it is likely the best option.  We could use hashing to determine which machine could have the cached results of a query using `machine = hash(query)`.  We'll likely want to use [consistent hashing](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#under-development).
 
 ## Additional talking points
 
@@ -247,58 +247,58 @@ To handle the heavy request load and the large amount of memory needed, we'll sc
 
 ### SQL scaling patterns
 
-* [Read replicas](https://github.com/sergeyleschev/system-design#master-slave-replication)
-* [Federation](https://github.com/sergeyleschev/system-design#federation)
-* [Sharding](https://github.com/sergeyleschev/system-design#sharding)
-* [Denormalization](https://github.com/sergeyleschev/system-design#denormalization)
-* [SQL Tuning](https://github.com/sergeyleschev/system-design#sql-tuning)
+* [Read replicas](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#master-slave-replication)
+* [Federation](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#federation)
+* [Sharding](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#sharding)
+* [Denormalization](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#denormalization)
+* [SQL Tuning](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#sql-tuning)
 
 #### NoSQL
 
-* [Key-value store](https://github.com/sergeyleschev/system-design#key-value-store)
-* [Document store](https://github.com/sergeyleschev/system-design#document-store)
-* [Wide column store](https://github.com/sergeyleschev/system-design#wide-column-store)
-* [Graph database](https://github.com/sergeyleschev/system-design#graph-database)
-* [SQL vs NoSQL](https://github.com/sergeyleschev/system-design#sql-or-nosql)
+* [Key-value store](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#key-value-store)
+* [Document store](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#document-store)
+* [Wide column store](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#wide-column-store)
+* [Graph database](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#graph-database)
+* [SQL vs NoSQL](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#sql-or-nosql)
 
 ### Caching
 
 * Where to cache
-    * [Client caching](https://github.com/sergeyleschev/system-design#client-caching)
-    * [CDN caching](https://github.com/sergeyleschev/system-design#cdn-caching)
-    * [Web server caching](https://github.com/sergeyleschev/system-design#web-server-caching)
-    * [Database caching](https://github.com/sergeyleschev/system-design#database-caching)
-    * [Application caching](https://github.com/sergeyleschev/system-design#application-caching)
+    * [Client caching](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#client-caching)
+    * [CDN caching](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#cdn-caching)
+    * [Web server caching](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#web-server-caching)
+    * [Database caching](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#database-caching)
+    * [Application caching](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#application-caching)
 * What to cache
-    * [Caching at the database query level](https://github.com/sergeyleschev/system-design#caching-at-the-database-query-level)
-    * [Caching at the object level](https://github.com/sergeyleschev/system-design#caching-at-the-object-level)
+    * [Caching at the database query level](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#caching-at-the-database-query-level)
+    * [Caching at the object level](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#caching-at-the-object-level)
 * When to update the cache
-    * [Cache-aside](https://github.com/sergeyleschev/system-design#cache-aside)
-    * [Write-through](https://github.com/sergeyleschev/system-design#write-through)
-    * [Write-behind (write-back)](https://github.com/sergeyleschev/system-design#write-behind-write-back)
-    * [Refresh ahead](https://github.com/sergeyleschev/system-design#refresh-ahead)
+    * [Cache-aside](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#cache-aside)
+    * [Write-through](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#write-through)
+    * [Write-behind (write-back)](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#write-behind-write-back)
+    * [Refresh ahead](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#refresh-ahead)
 
 ### Asynchronism and microservices
 
-* [Message queues](https://github.com/sergeyleschev/system-design#message-queues)
-* [Task queues](https://github.com/sergeyleschev/system-design#task-queues)
-* [Back pressure](https://github.com/sergeyleschev/system-design#back-pressure)
-* [Microservices](https://github.com/sergeyleschev/system-design#microservices)
+* [Message queues](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#message-queues)
+* [Task queues](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#task-queues)
+* [Back pressure](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#back-pressure)
+* [Microservices](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#microservices)
 
 ### Communications
 
 * Discuss tradeoffs:
-    * External communication with clients - [HTTP APIs following REST](https://github.com/sergeyleschev/system-design#representational-state-transfer-rest)
-    * Internal communications - [RPC](https://github.com/sergeyleschev/system-design#remote-procedure-call-rpc)
-* [Service discovery](https://github.com/sergeyleschev/system-design#service-discovery)
+    * External communication with clients - [HTTP APIs following REST](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#representational-state-transfer-rest)
+    * Internal communications - [RPC](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#remote-procedure-call-rpc)
+* [Service discovery](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#service-discovery)
 
 ### Security
 
-Refer to the [security section](https://github.com/sergeyleschev/system-design#security).
+Refer to the [security section](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#security).
 
 ### Latency numbers
 
-See [Latency numbers every programmer should know](https://github.com/sergeyleschev/system-design#latency-numbers-every-programmer-should-know).
+See [Latency numbers every programmer should know](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#latency-numbers-every-programmer-should-know).
 
 ### Ongoing
 
