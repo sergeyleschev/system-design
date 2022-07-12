@@ -1,6 +1,6 @@
 # Design Amazon's sales rank by category feature
 
-*Note: This document links directly to relevant areas found in the [system design topics](https://github.com/sergeyleschev/system-design#index-of-system-design-topics) to avoid duplication.  Refer to the linked content for general talking points, tradeoffs, and alternatives.*
+*Note: This document links directly to relevant areas found in the [system design topics](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#index-of-system-design-topics) to avoid duplication.  Refer to the linked content for general talking points, tradeoffs, and alternatives.*
 
 ## Step 1: Outline use cases and constraints
 
@@ -95,7 +95,7 @@ t5          product4    category1      1        5.00         5            6
 ...
 ```
 
-The **Sales Rank Service** could use **MapReduce**, using the **Sales API** server log files as input and writing the results to an aggregate table `sales_rank` in a **SQL Database**.  We should discuss the [use cases and tradeoffs between choosing SQL or NoSQL](https://github.com/sergeyleschev/system-design#sql-or-nosql).
+The **Sales Rank Service** could use **MapReduce**, using the **Sales API** server log files as input and writing the results to an aggregate table `sales_rank` in a **SQL Database**.  We should discuss the [use cases and tradeoffs between choosing SQL or NoSQL](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#sql-or-nosql).
 
 We'll use a multi-step **MapReduce**:
 
@@ -196,15 +196,15 @@ FOREIGN KEY(category_id) REFERENCES Categories(id)
 FOREIGN KEY(product_id) REFERENCES Products(id)
 ```
 
-We'll create an [index](https://github.com/sergeyleschev/system-design#use-good-indices) on `id `, `category_id`, and `product_id` to speed up lookups (log-time instead of scanning the entire table) and to keep the data in memory.  Reading 1 MB sequentially from memory takes about 250 microseconds, while reading from SSD takes 4x and from disk takes 80x longer.<sup><a href=https://github.com/sergeyleschev/system-design#latency-numbers-every-programmer-should-know>1</a></sup>
+We'll create an [index](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#use-good-indices) on `id `, `category_id`, and `product_id` to speed up lookups (log-time instead of scanning the entire table) and to keep the data in memory.  Reading 1 MB sequentially from memory takes about 250 microseconds, while reading from SSD takes 4x and from disk takes 80x longer.<sup><a href=https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#latency-numbers-every-programmer-should-know>1</a></sup>
 
 ### Use case: User views the past week's most popular products by category
 
-* The **Client** sends a request to the **Web Server**, running as a [reverse proxy](https://github.com/sergeyleschev/system-design#reverse-proxy-web-server)
+* The **Client** sends a request to the **Web Server**, running as a [reverse proxy](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#reverse-proxy-web-server)
 * The **Web Server** forwards the request to the **Read API** server
 * The **Read API** server reads from the **SQL Database** `sales_rank` table
 
-We'll use a public [**REST API**](https://github.com/sergeyleschev/system-design#representational-state-transfer-rest):
+We'll use a public [**REST API**](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#representational-state-transfer-rest):
 
 ```
 $ curl https://amazon.com/api/v1/popular?category_id=1234
@@ -233,7 +233,7 @@ Response:
 },
 ```
 
-For internal communications, we could use [Remote Procedure Calls](https://github.com/sergeyleschev/system-design#remote-procedure-call-rpc).
+For internal communications, we could use [Remote Procedure Calls](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#remote-procedure-call-rpc).
 
 ## Step 4: Scale the design
 
@@ -249,20 +249,20 @@ It's important to discuss what bottlenecks you might encounter with the initial 
 
 We'll introduce some components to complete the design and to address scalability issues.  Internal load balancers are not shown to reduce clutter.
 
-*To avoid repeating discussions*, refer to the following [system design topics](https://github.com/sergeyleschev/system-design#index-of-system-design-topics) for main talking points, tradeoffs, and alternatives:
+*To avoid repeating discussions*, refer to the following [system design topics](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#index-of-system-design-topics) for main talking points, tradeoffs, and alternatives:
 
-* [DNS](https://github.com/sergeyleschev/system-design#domain-name-system)
-* [CDN](https://github.com/sergeyleschev/system-design#content-delivery-network)
-* [Load balancer](https://github.com/sergeyleschev/system-design#load-balancer)
-* [Horizontal scaling](https://github.com/sergeyleschev/system-design#horizontal-scaling)
-* [Web server (reverse proxy)](https://github.com/sergeyleschev/system-design#reverse-proxy-web-server)
-* [API server (application layer)](https://github.com/sergeyleschev/system-design#application-layer)
-* [Cache](https://github.com/sergeyleschev/system-design#cache)
-* [Relational database management system (RDBMS)](https://github.com/sergeyleschev/system-design#relational-database-management-system-rdbms)
-* [SQL write master-slave failover](https://github.com/sergeyleschev/system-design#fail-over)
-* [Master-slave replication](https://github.com/sergeyleschev/system-design#master-slave-replication)
-* [Consistency patterns](https://github.com/sergeyleschev/system-design#consistency-patterns)
-* [Availability patterns](https://github.com/sergeyleschev/system-design#availability-patterns)
+* [DNS](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#domain-name-system)
+* [CDN](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#content-delivery-network)
+* [Load balancer](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#load-balancer)
+* [Horizontal scaling](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#horizontal-scaling)
+* [Web server (reverse proxy)](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#reverse-proxy-web-server)
+* [API server (application layer)](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#application-layer)
+* [Cache](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#cache)
+* [Relational database management system (RDBMS)](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#relational-database-management-system-rdbms)
+* [SQL write master-slave failover](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#fail-over)
+* [Master-slave replication](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#master-slave-replication)
+* [Consistency patterns](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#consistency-patterns)
+* [Availability patterns](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#availability-patterns)
 
 The **Analytics Database** could use a data warehousing solution such as Amazon Redshift or Google BigQuery.
 
@@ -274,10 +274,10 @@ To address the 40,000 *average* read requests per second (higher at peak), traff
 
 SQL scaling patterns include:
 
-* [Federation](https://github.com/sergeyleschev/system-design#federation)
-* [Sharding](https://github.com/sergeyleschev/system-design#sharding)
-* [Denormalization](https://github.com/sergeyleschev/system-design#denormalization)
-* [SQL Tuning](https://github.com/sergeyleschev/system-design#sql-tuning)
+* [Federation](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#federation)
+* [Sharding](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#sharding)
+* [Denormalization](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#denormalization)
+* [SQL Tuning](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#sql-tuning)
 
 We should also consider moving some data to a **NoSQL Database**.
 
@@ -287,50 +287,50 @@ We should also consider moving some data to a **NoSQL Database**.
 
 #### NoSQL
 
-* [Key-value store](https://github.com/sergeyleschev/system-design#key-value-store)
-* [Document store](https://github.com/sergeyleschev/system-design#document-store)
-* [Wide column store](https://github.com/sergeyleschev/system-design#wide-column-store)
-* [Graph database](https://github.com/sergeyleschev/system-design#graph-database)
-* [SQL vs NoSQL](https://github.com/sergeyleschev/system-design#sql-or-nosql)
+* [Key-value store](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#key-value-store)
+* [Document store](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#document-store)
+* [Wide column store](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#wide-column-store)
+* [Graph database](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#graph-database)
+* [SQL vs NoSQL](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#sql-or-nosql)
 
 ### Caching
 
 * Where to cache
-    * [Client caching](https://github.com/sergeyleschev/system-design#client-caching)
-    * [CDN caching](https://github.com/sergeyleschev/system-design#cdn-caching)
-    * [Web server caching](https://github.com/sergeyleschev/system-design#web-server-caching)
-    * [Database caching](https://github.com/sergeyleschev/system-design#database-caching)
-    * [Application caching](https://github.com/sergeyleschev/system-design#application-caching)
+    * [Client caching](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#client-caching)
+    * [CDN caching](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#cdn-caching)
+    * [Web server caching](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#web-server-caching)
+    * [Database caching](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#database-caching)
+    * [Application caching](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#application-caching)
 * What to cache
-    * [Caching at the database query level](https://github.com/sergeyleschev/system-design#caching-at-the-database-query-level)
-    * [Caching at the object level](https://github.com/sergeyleschev/system-design#caching-at-the-object-level)
+    * [Caching at the database query level](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#caching-at-the-database-query-level)
+    * [Caching at the object level](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#caching-at-the-object-level)
 * When to update the cache
-    * [Cache-aside](https://github.com/sergeyleschev/system-design#cache-aside)
-    * [Write-through](https://github.com/sergeyleschev/system-design#write-through)
-    * [Write-behind (write-back)](https://github.com/sergeyleschev/system-design#write-behind-write-back)
-    * [Refresh ahead](https://github.com/sergeyleschev/system-design#refresh-ahead)
+    * [Cache-aside](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#cache-aside)
+    * [Write-through](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#write-through)
+    * [Write-behind (write-back)](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#write-behind-write-back)
+    * [Refresh ahead](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#refresh-ahead)
 
 ### Asynchronism and microservices
 
-* [Message queues](https://github.com/sergeyleschev/system-design#message-queues)
-* [Task queues](https://github.com/sergeyleschev/system-design#task-queues)
-* [Back pressure](https://github.com/sergeyleschev/system-design#back-pressure)
-* [Microservices](https://github.com/sergeyleschev/system-design#microservices)
+* [Message queues](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#message-queues)
+* [Task queues](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#task-queues)
+* [Back pressure](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#back-pressure)
+* [Microservices](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#microservices)
 
 ### Communications
 
 * Discuss tradeoffs:
-    * External communication with clients - [HTTP APIs following REST](https://github.com/sergeyleschev/system-design#representational-state-transfer-rest)
-    * Internal communications - [RPC](https://github.com/sergeyleschev/system-design#remote-procedure-call-rpc)
-* [Service discovery](https://github.com/sergeyleschev/system-design#service-discovery)
+    * External communication with clients - [HTTP APIs following REST](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#representational-state-transfer-rest)
+    * Internal communications - [RPC](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#remote-procedure-call-rpc)
+* [Service discovery](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#service-discovery)
 
 ### Security
 
-Refer to the [security section](https://github.com/sergeyleschev/system-design#security).
+Refer to the [security section](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#security).
 
 ### Latency numbers
 
-See [Latency numbers every programmer should know](https://github.com/sergeyleschev/system-design#latency-numbers-every-programmer-should-know).
+See [Latency numbers every programmer should know](https://github.com/sergeyleschev/system-design/blob/main/sergeyleschev-system-architect-roadmap.md#latency-numbers-every-programmer-should-know).
 
 ### Ongoing
 
